@@ -16,7 +16,7 @@ class AuthorProfile(models.Model):
         ('male', 'Male'),
         ('female', 'Female')
     )
-    gender = models.CharField(choices=gender_choice, max_length=5)
+    gender = models.CharField(choices=gender_choice, max_length=12)
     facebook_url = models.URLField(null=True, blank=True)
     twitter_url = models.URLField(null=True, blank=True)
     linkedin_url = models.URLField(null=True, blank=True)
